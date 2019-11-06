@@ -29,10 +29,6 @@ def list_reverse(_string):
     return "".join(l)
 
 
-# def testing(_string):
-#     return _string.reverse()
-
-
 if __name__ == "__main__":
     string_to_reverse = get_data()
     print(reversed_string(string_to_reverse))
