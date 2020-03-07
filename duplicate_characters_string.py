@@ -10,11 +10,8 @@
 from collections import Counter
 
 s = "Andaman and Nicobar"
-chars = []
+chars = Counter(s.lower())
 
-for i in s:
-    if i not in chars:
-        chars.append(i)
+dupes = [k for k, v in chars.items() if v > 1]
 
-dupes = [i for idx, i in enumerate(Counter(chars)) if idx > 1]
 print(dupes)
